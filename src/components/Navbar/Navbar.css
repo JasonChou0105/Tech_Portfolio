@@ -1,0 +1,82 @@
+.navbar-root-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: sticky;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  width: 80%;
+
+  padding: 16px;
+  border-radius: 16px;
+  background-color: #242424;
+  transition: all 0.2s ease-in-out;
+}
+.desktop-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.navbar-sections-links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12;
+}
+
+.navbar-section-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-section-link-container {
+  transition: all 0.2s ease-in-out;
+  margin: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.navbar-logo-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px 20px;
+  font-family: "M PLUS 1 Code", monospace;
+}
+
+.navbar-section-link-container:hover {
+  background-color: #8b8b8b95;
+  transition: all 0.2s ease-in-out;
+  padding: 8px 16px;
+}
+
+.navbar-section-link:hover {
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .menu-icon {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-right: 12px;
+    color: #ffffff;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}

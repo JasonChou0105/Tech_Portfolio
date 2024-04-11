@@ -1,0 +1,9 @@
+.inner-container {
+  align-self: flex-end;
+  height: 80vh;
+  width: 100%;
+}
+
+.home-title {
+  color: #ffffff;
+}
