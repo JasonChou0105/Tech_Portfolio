@@ -4,7 +4,7 @@ import "./Button.css";
 
 const STYLES = ["btn-fill", "btn-outline"];
 
-const SIZES = ["btn-medium", "btn-large"];
+const SIZES = ["btn-medium", "btn-large", "btn-max-width"];
 
 function Button({ children, type, onClick, buttonStyle, buttonSize }) {
   const checkButtonStyle = STYLES.includes(buttonStyle)

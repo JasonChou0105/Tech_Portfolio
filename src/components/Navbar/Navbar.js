@@ -31,7 +31,7 @@ function Navbar() {
 
   return (
     <div className="navbar-root-container">
-      <div className="navbar-container">
+      <div className={`navbar-container ${menuOpen && "active"}`}>
         <div className="desktop-container">
           <Link className="navbar-logo-link" to="/">
             J.C
@@ -39,9 +39,6 @@ function Navbar() {
           {buttonShown && (
             <div className="navbar-sections-links-container ">
               <NavbarLinks closeMobileMenu={closeMobileMenu} />
-              <Link className="mobile-contact-me-button navbar-section-link">
-                Contact Me
-              </Link>
             </div>
           )}
 
@@ -54,7 +51,18 @@ function Navbar() {
             <i className={menuOpen ? "fas fa-times" : "fas fa-bars"} />
           </div>
         </div>
-        {menuOpen && <NavbarLinks closeMobileMenu={closeMobileMenu} />}
+        {menuOpen && (
+          <div
+            className={`mobile-navbar-sections-links-container ${
+              menuOpen && "active"
+            }`}
+          >
+            <NavbarLinks closeMobileMenu={closeMobileMenu} />
+            <Button buttonStyle="btn-primary" buttonSize="btn-max-width">
+              Contact Me
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );
