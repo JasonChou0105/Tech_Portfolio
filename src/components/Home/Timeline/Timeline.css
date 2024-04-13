@@ -1,0 +1,7 @@
+.vertical-timeline::before {
+  /* this is the vertical line */
+  background: #ffffffb4 !important;
+}
+.vertical-timeline {
+  border-top: 4px solid #ffffffb4;
+}

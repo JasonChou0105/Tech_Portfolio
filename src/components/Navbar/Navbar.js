@@ -7,6 +7,7 @@ import NavbarLinks from "./NavbarLinks";
 function Navbar() {
   const [buttonShown, setButtonShown] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [navbarScrolled, setNavbarScrolled] = useState();
 
   function handleClick() {
     setMenuOpen(!menuOpen);
@@ -22,16 +23,32 @@ function Navbar() {
       setButtonShown(true);
     }
   }
+  const handleScroll = () => {
+    const targetScrollY = 16; // Change this to your specific scroll point
+    if (window.scrollY > targetScrollY) {
+      setNavbarScrolled(true);
+    } else {
+      setNavbarScrolled(false);
+    }
+  };
 
   useEffect(() => {
     showElements();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   window.addEventListener("resize", showElements);
 
   return (
-    <div className="navbar-root-container">
-      <div className={`navbar-container ${menuOpen && "active"}`}>
+    <div className={`navbar-root-container ${navbarScrolled && "scrolled"}`}>
+      <div
+        className={`navbar-container ${menuOpen && "active"} ${
+          navbarScrolled && "scrolled"
+        }`}
+      >
         <div className="desktop-container">
           <Link className="navbar-logo-link" to="/">
             J.C

@@ -1,9 +1,43 @@
-.inner-container {
-  align-self: flex-end;
-  height: 80vh;
+.container {
+  display: flex;
   width: 100%;
+  flex-direction: column;
+  text-align: center;
+  min-height: 400px;
+}
+
+.content-container {
+  position: relative;
+  background-color: #000721;
 }
 
 .home-title {
+  justify-self: center;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 2.5vw;
+  font-family: "M PLUS 1 Code", monospace;
   color: #ffffff;
+  margin: 16px;
+}
+.home-title-container {
+  justify-content: center;
+  align-items: center;
+  padding: 100px 16px 64px 16px;
+}
+
+.desc-text {
+  color: #ffffff;
+}
+
+.spacer {
+  aspect-ratio: 900/200;
+  width: 100%;
+  height: min-content;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.layered-waves {
+  background-image: url("../../../public/layered-waves-haikei.svg");
 }
