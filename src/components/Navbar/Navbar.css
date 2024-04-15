@@ -1,18 +1,20 @@
 .navbar-root-container {
   display: flex;
+  position: sticky;
   justify-content: center;
   align-items: center;
   width: 100%;
   top: 0px;
   z-index: 999;
   margin-top: 16px;
+  position: absolute;
 }
 
 .navbar-container {
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 300px;
+  height: 400px;
   max-height: 80px;
   padding: 16px;
   border-radius: 16px;
@@ -79,7 +81,7 @@
   width: 100%;
 }
 .navbar-container.active {
-  max-height: 300px;
+  max-height: 330px;
   overflow: hidden;
   transition: all 0.4s ease-in-out;
 }
@@ -88,7 +90,8 @@
   border-radius: 0px 0px 16px 16px;
 }
 .navbar-root-container.scrolled {
-  position: sticky;
+  margin: 0px;
+  position: fixed;
 }
 @media screen and (max-width: 1100px) {
   .menu-icon {

@@ -16,7 +16,7 @@ function Navbar() {
     setMenuOpen(false);
   }
 
-  function showElements() {
+  function showButton() {
     if (window.innerWidth <= 1100) {
       setButtonShown(false);
     } else {
@@ -33,14 +33,14 @@ function Navbar() {
   };
 
   useEffect(() => {
-    showElements();
+    showButton();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  window.addEventListener("resize", showElements);
+  window.addEventListener("resize", showButton);
 
   return (
     <div className={`navbar-root-container ${navbarScrolled && "scrolled"}`}>

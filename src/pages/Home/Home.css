@@ -3,7 +3,6 @@
   width: 100%;
   flex-direction: column;
   text-align: center;
-  min-height: 400px;
 }
 
 .content-container {
@@ -19,11 +18,15 @@
   font-family: "M PLUS 1 Code", monospace;
   color: #ffffff;
   margin: 16px;
+  padding-top: 100px;
+}
+.linear-gradient-background {
+  background: linear-gradient(#300f00, #600000);
 }
 .home-title-container {
   justify-content: center;
   align-items: center;
-  padding: 100px 16px 64px 16px;
+  padding: 10px 16px 32px 16px;
 }
 
 .desc-text {
