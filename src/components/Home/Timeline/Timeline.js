@@ -5,6 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "./Timeline.css";
+import { Link } from "react-router-dom";
 
 const WorkIcon = () => <></>;
 
@@ -25,12 +26,21 @@ function Timeline() {
         }}
         icon={<WorkIcon />}
       >
-        <h3 className="vertical-timeline-element-title">Dream Room Project</h3>
-        <p className="subtext">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          veritatis, facilis iure magnam maxime sed id, culpa asperiores fuga
-          corrupti quisquam quidem ab qui. Est expedita non voluptate quam unde?
-        </p>
+        <Link to="/project" className="link">
+          <h3 className="vertical-timeline-element-title">
+            Dream Room Project
+          </h3>
+          <p className="subtext">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <div className="img-container">
+            <img
+              className="image"
+              src="/images/House.jpeg"
+              alt="Dream room project"
+            />
+          </div>
+        </Link>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -40,12 +50,19 @@ function Timeline() {
         iconStyle={{ background: "#6e0d00", color: "#fff" }}
         icon={<WorkIcon />}
       >
-        <h3 className="vertical-timeline-element-title">Microbit Project</h3>
-        <p className="subtext">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          veritatis, facilis iure magnam maxime sed id, culpa asperiores fuga
-          corrupti quisquam quidem ab qui. Est expedita non voluptate quam unde?
-        </p>
+        <Link to="/project" className="link">
+          <h3 className="vertical-timeline-element-title">Microbit Project</h3>
+          <p className="subtext">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <div className="img-container">
+            <img
+              className="image"
+              src="/images/Microbit.png"
+              alt="Microbit game project"
+            />
+          </div>
+        </Link>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
