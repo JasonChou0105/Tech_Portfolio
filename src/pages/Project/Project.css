@@ -1,0 +1,11 @@
+.header-container {
+  justify-self: center;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 2.5vw;
+  font-family: "M PLUS 1 Code", monospace;
+  color: #ffffff;
+  margin: 16px;
+  padding-top: 100px;
+}

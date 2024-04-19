@@ -50,7 +50,7 @@ function Navbar() {
         }`}
       >
         <div className="desktop-container">
-          <Link className="navbar-logo-link" to="/">
+          <Link className="navbar-logo-link" to="/" onClick={closeMobileMenu}>
             J.C
           </Link>
           {buttonShown && (

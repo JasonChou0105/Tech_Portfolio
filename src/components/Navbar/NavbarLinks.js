@@ -14,7 +14,7 @@ function NavbarLinks({ closeMobileMenu }) {
       <div className="navbar-section-link-container">
         <Link
           className="navbar-section-link"
-          to="/dream-space"
+          to="/project/dream-space"
           onClick={closeMobileMenu}
         >
           Dream Space
@@ -24,7 +24,7 @@ function NavbarLinks({ closeMobileMenu }) {
       <div className="navbar-section-link-container">
         <Link
           className="navbar-section-link"
-          to="/microbit"
+          to="/project/microbit"
           onClick={closeMobileMenu}
         >
           Microbit

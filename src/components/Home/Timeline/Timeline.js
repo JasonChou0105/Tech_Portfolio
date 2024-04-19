@@ -26,9 +26,9 @@ function Timeline() {
         }}
         icon={<WorkIcon />}
       >
-        <Link to="/project" className="link">
+        <Link to="/project/dream-space" className="link">
           <h3 className="vertical-timeline-element-title">
-            Dream Room Project
+            Dream Space Project
           </h3>
           <p className="subtext">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -50,7 +50,7 @@ function Timeline() {
         iconStyle={{ background: "#6e0d00", color: "#fff" }}
         icon={<WorkIcon />}
       >
-        <Link to="/project" className="link">
+        <Link to="/project/microbit" className="link">
           <h3 className="vertical-timeline-element-title">Microbit Project</h3>
           <p className="subtext">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -78,7 +78,7 @@ function Timeline() {
         }}
         icon={<WorkIcon />}
       >
-        <h3 className="vertical-timeline-element-title">Dream Room Project</h3>
+        <h3 className="vertical-timeline-element-title">Dream Space Project</h3>
         <p className="subtext">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
           veritatis, facilis iure magnam maxime sed id, culpa asperiores fuga
