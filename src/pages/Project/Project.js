@@ -20,7 +20,7 @@ function Project({ title, images, description }) {
     }
   }
   return (
-    <div className="container">
+    <div className="project-container">
       <div className="header-container">{title}</div>
       <div className="content-container">
         <div className="inner-container image-container">

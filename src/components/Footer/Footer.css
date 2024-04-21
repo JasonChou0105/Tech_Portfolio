@@ -1,12 +1,12 @@
 .footer-container {
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #242424;
   padding: 16px;
+  position: absolute;
   bottom: 0;
 }
 .link-text {

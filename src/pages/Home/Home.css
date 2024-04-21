@@ -2,6 +2,10 @@
   position: relative;
   background-color: #000721;
 }
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
 
 .home-title {
   justify-self: center;
