@@ -5,41 +5,31 @@ import { Link } from "react-router-dom";
 function NavbarLinks({ closeMobileMenu }) {
   return (
     <>
-      <div className="navbar-section-link-container">
-        <Link className="navbar-section-link" to="/" onClick={closeMobileMenu}>
-          Home
-        </Link>
-      </div>
+      <Link className="navbar-section-link" to="/" onClick={closeMobileMenu}>
+        <div className="navbar-section-link-container">Home</div>
+      </Link>
+      <Link
+        className="navbar-section-link"
+        to="/project/dream-space"
+        onClick={closeMobileMenu}
+      >
+        <div className="navbar-section-link-container">Dream Space</div>
+      </Link>
 
-      <div className="navbar-section-link-container">
-        <Link
-          className="navbar-section-link"
-          to="/project/dream-space"
-          onClick={closeMobileMenu}
-        >
-          Dream Space
-        </Link>
-      </div>
-
-      <div className="navbar-section-link-container">
-        <Link
-          className="navbar-section-link"
-          to="/project/microbit"
-          onClick={closeMobileMenu}
-        >
-          Microbit
-        </Link>
-      </div>
-
-      <div className="navbar-section-link-container">
-        <Link
-          className="navbar-section-link"
-          to="/circuit"
-          onClick={closeMobileMenu}
-        >
-          Circuit
-        </Link>
-      </div>
+      <Link
+        className="navbar-section-link"
+        to="/project/microbit"
+        onClick={closeMobileMenu}
+      >
+        <div className="navbar-section-link-container">Microbit</div>
+      </Link>
+      <Link
+        className="navbar-section-link"
+        to="/circuit"
+        onClick={closeMobileMenu}
+      >
+        <div className="navbar-section-link-container">Circuit</div>
+      </Link>
     </>
   );
 }

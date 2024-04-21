@@ -18,7 +18,7 @@
   padding: 16px;
   border-radius: 16px;
   background-color: #242424;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .desktop-container {
@@ -82,7 +82,7 @@
 .navbar-container.active {
   max-height: 330px;
   overflow: hidden;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .navbar-container.scrolled {
   width: 100%;

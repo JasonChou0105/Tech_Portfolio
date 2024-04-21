@@ -21,10 +21,7 @@ function Footer() {
           <i className="fas fa-envelope icon"></i>
         </Link>
       </div>
-      <div className="content copyright-container">
-        <i className="fas fa-copyright"></i> 2024 Jason Chou. All Rights
-        Reserved.
-      </div>
+      <div className="content copyright-container">Created by Jason Chou</div>
       <div className="desc-text content">
         Made with{" "}
         <Link className="link-text" target="_blank" to="https://react.dev/">

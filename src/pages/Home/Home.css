@@ -1,4 +1,4 @@
-.content-container {
+.content-container-home {
   position: relative;
   background-color: #000721;
 }
@@ -23,8 +23,11 @@
   padding: 10px 16px 32px 16px;
 }
 
-.desc-text {
+.home-description-text {
   color: #ffffff;
+  align-self: center;
+  text-align: center;
+  margin-top: 32px;
 }
 
 .spacer {

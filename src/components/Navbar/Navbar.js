@@ -5,7 +5,7 @@ import "./Navbar.css";
 import NavbarLinks from "./NavbarLinks";
 
 function Navbar() {
-  const [buttonShown, setButtonShown] = useState(true);
+  const [menuShown, setMenuShown] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [navbarScrolled, setNavbarScrolled] = useState();
 
@@ -16,11 +16,12 @@ function Navbar() {
     setMenuOpen(false);
   }
 
-  function showButton() {
+  function showMenu() {
     if (window.innerWidth <= 1100) {
-      setButtonShown(false);
+      setMenuShown(true);
     } else {
-      setButtonShown(true);
+      setMenuShown(false);
+      setMenuOpen(false);
     }
   }
   const handleScroll = () => {
@@ -33,14 +34,14 @@ function Navbar() {
   };
 
   useEffect(() => {
-    showButton();
+    showMenu();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  window.addEventListener("resize", showButton);
+  window.addEventListener("resize", showMenu);
 
   return (
     <div className={`navbar-root-container ${navbarScrolled && "scrolled"}`}>
@@ -53,13 +54,13 @@ function Navbar() {
           <Link className="navbar-logo-link" to="/" onClick={closeMobileMenu}>
             J.C
           </Link>
-          {buttonShown && (
+          {!menuShown && (
             <div className="navbar-sections-links-container ">
               <NavbarLinks closeMobileMenu={closeMobileMenu} />
             </div>
           )}
 
-          {buttonShown && (
+          {!menuShown && (
             <Button buttonStyle="btn-primary" buttonSize="btn-meduim">
               Contact Me
             </Button>
@@ -75,7 +76,11 @@ function Navbar() {
             }`}
           >
             <NavbarLinks closeMobileMenu={closeMobileMenu} />
-            <Button buttonStyle="btn-primary" buttonSize="btn-max-width">
+            <Button
+              location="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvmXxjnmwhQjBHnKGZkqDKCJWFnwRLtKZzQfrNKsMCmFnmNBQQdTWxrTNFWNHPmrsqgpNB"
+              buttonStyle="btn-primary"
+              buttonSize="btn-max-width"
+            >
               Contact Me
             </Button>
           </div>

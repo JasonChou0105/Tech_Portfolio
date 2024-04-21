@@ -36,7 +36,7 @@ function Timeline() {
           <div className="img-container">
             <img
               className="image"
-              src="/images/House.jpeg"
+              src="/images/dream-space/House.jpeg"
               alt="Dream room project"
             />
           </div>
@@ -58,7 +58,7 @@ function Timeline() {
           <div className="img-container">
             <img
               className="image"
-              src="/images/Microbit.png"
+              src="/images/microbit/Microbit.png"
               alt="Microbit game project"
             />
           </div>

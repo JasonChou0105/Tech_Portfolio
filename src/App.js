@@ -17,12 +17,26 @@ function App() {
             <Route
               path="/project/dream-space"
               exact
-              Component={Project.bind(this, { title: "Dream Space" })}
+              Component={Project.bind(this, {
+                title: "Dream Space",
+                images: [
+                  "/images/dream-space/House.jpeg",
+                  "/images/dream-space/House2.jpeg",
+                  "/images/microbit/Microbit.png",
+                ],
+                description:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati ut, tempore consectetur non distinctio quasi error vitae officiis voluptatum dolor debitis ipsa accusantium vel tempora enim iste! Exercitatione",
+              })}
             />
             <Route
               path="/project/microbit"
               exact
-              Component={Project.bind(this, { title: "Microbit" })}
+              Component={Project.bind(this, {
+                title: "Microbit",
+                image: "/images/microbit/Microbit.png",
+                description:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati ut, tempore consectetur non distinctio quasi error vitae officiis voluptatum dolor debitis ipsa accusantium vel tempora enim iste! Exercitationem, corrupti!",
+              })}
             />
           </Routes>
         </PageContainer>
