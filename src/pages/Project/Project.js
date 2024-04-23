@@ -29,18 +29,18 @@ function Project({ title, images, description }) {
             src={images[curIndex < size ? curIndex + 1 : 0]}
             alt="Microbit game project"
           />
+          <div onClick={leftArrowClick} className="arrow-button">
+            <i className="fas fa-chevron-left icon-arrow"></i>
+          </div>
           <div className="image-focus-container">
-            <div onClick={leftArrowClick} className="arrow-button">
-              <i className="fas fa-chevron-left icon-arrow"></i>
-            </div>
             <img
               className="image image-focused"
               src={images[curIndex]}
               alt="Microbit game project"
             />
-            <div onClick={rightArrowClick} className="arrow-button">
-              <i className="fas fa-chevron-right icon-arrow"></i>
-            </div>
+          </div>
+          <div onClick={rightArrowClick} className="arrow-button">
+            <i className="fas fa-chevron-right icon-arrow"></i>
           </div>
           <img
             className="image image-unfocused image-unfocused-right"
