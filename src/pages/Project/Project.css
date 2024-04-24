@@ -1,5 +1,5 @@
 .project-container {
-  margin: 64px 16px;
+  margin: 100px 16px;
 }
 
 .header-container {
@@ -11,7 +11,7 @@
   font-family: "M PLUS 1 Code", monospace;
   color: #ffffff;
   margin: 16px;
-  padding-top: 100px;
+  padding-top: 64px;
 }
 
 .description {
@@ -22,29 +22,9 @@
 
 .content-container {
   display: flex;
-  margin-top: 64px;
   justify-content: center;
   align-items: center;
-}
-
-.image {
-  color: #ffffff;
-}
-.image-unfocused {
-  width: 30%;
-  z-index: -1;
-  opacity: 0.75;
-}
-.image-unfocused-left {
-  transform: translate(10vw, 0px);
-}
-.image-unfocused-right {
-  transform: translate(-10vw, 0px);
-}
-.image-focused {
-  box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.75);
-  scale: 1.1;
-  z-index: 99;
+  margin-top: 64px;
 }
 .inner-container {
   display: flex;
@@ -60,29 +40,6 @@
 }
 .image-container {
   width: 60%;
-  height: 100%;
-}
-.image-focus-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  z-index: 99;
-}
-
-.icon-arrow {
-  color: #ffffff;
-  font-size: 1.5rem;
-}
-.arrow-button {
-  background-color: none;
-}
-
-.fa-chevron-left {
-  transform: translate(-2vw, 0px);
-}
-.fa-chevron-right {
-  transform: translate(2vw, 0px);
 }
 
 @media screen and (max-width: 850px) {

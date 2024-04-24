@@ -61,7 +61,11 @@ function Navbar() {
           )}
 
           {!menuShown && (
-            <Button buttonStyle="btn-primary" buttonSize="btn-meduim">
+            <Button
+              location="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvmXxjnmwhQjBHnKGZkqDKCJWFnwRLtKZzQfrNKsMCmFnmNBQQdTWxrTNFWNHPmrsqgpNB"
+              buttonStyle="btn-primary"
+              buttonSize="btn-meduim"
+            >
               Contact Me
             </Button>
           )}
