@@ -13,15 +13,15 @@ function Project({ title, images, description }) {
               rewind: true,
               width: 800,
               gap: "1rem",
+              padding: "0px",
             }}
             aria-label="My Favorite Images"
           >
-            <SplideSlide>
-              <img src={images[0]} alt=" 1" />
-            </SplideSlide>
-            <SplideSlide>
-              <img src={images[1]} alt=" 2" />
-            </SplideSlide>
+            {images.map((image) => (
+              <SplideSlide>
+                <img className="slide-image" src={image} alt="" />
+              </SplideSlide>
+            ))}
           </Splide>
         </div>
         <div className="inner-container description-container">

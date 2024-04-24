@@ -36,10 +36,30 @@
 
 .description-container {
   width: 40%;
-  transform: translate(-7.5vw, 0px);
+  transform: translate(-5vw, 0px);
 }
 .image-container {
   width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-image {
+  object-fit: cover;
+  width: 70%;
+  float: left;
+}
+
+.splide__arrow--next {
+  transform: translateX(-2vw) !important;
+}
+.splide__arrow--prev {
+  transform: translateX(2vw) !important;
 }
 
 @media screen and (max-width: 850px) {
