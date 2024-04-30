@@ -92,15 +92,7 @@
   margin: 0px;
   position: fixed;
 }
-.vertical-timeline-element-content {
-  transition: all 0.2s ease-in-out;
-}
 
-.vertical-timeline-element-content:hover {
-  transition: all 0.2s ease-in-out;
-  scale: 1.03;
-  box-shadow: 10px 10px 21px -10px rgb(109, 109, 109);
-}
 @media screen and (max-width: 1100px) {
   .menu-icon {
     display: flex;

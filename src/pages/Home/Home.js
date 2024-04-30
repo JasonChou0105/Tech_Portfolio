@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Timeline from "../../components/Home/Timeline/Timeline";
+import Topics from "../../components/Home/Topics/Topics";
 function Home() {
   return (
     <div className="home-container">
@@ -14,6 +15,7 @@ function Home() {
       </div>
       <div className="content-container-home">
         <div className="spacer layered-waves"></div>
+        <Topics />
         <Timeline />
       </div>
     </div>

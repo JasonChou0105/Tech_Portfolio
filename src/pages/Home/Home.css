@@ -1,6 +1,11 @@
 .content-container-home {
   position: relative;
-  background-color: #000721;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000413;
 }
 .home-container {
   display: flex;

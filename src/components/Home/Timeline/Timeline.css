@@ -18,6 +18,12 @@
   color: #ffffffb4;
 }
 
+.timeline-header {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
 .image {
   max-width: 100%;
   max-height: 100%;
@@ -50,4 +56,14 @@
   .vertical-timeline-element-content
   .vertical-timeline-element-date {
   text-align: start !important;
+}
+
+.vertical-timeline-element-content {
+  transition: all 0.2s ease-in-out;
+}
+
+.vertical-timeline-element-content:hover {
+  transition: all 0.2s ease-in-out;
+  scale: 1.02;
+  box-shadow: 10px 10px 21px -10px rgb(43, 43, 43);
 }
