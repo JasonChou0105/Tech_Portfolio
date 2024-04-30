@@ -6,7 +6,7 @@ function TopicTile({ children, image }) {
     <div className="topic-tile-container">
       <div className="topic-image-container">
         <img
-          src={"/images/topics/Engineering.png"}
+          src={`/images/topics/${image}`}
           alt={children}
           className="topic-image"
         />

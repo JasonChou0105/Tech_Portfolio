@@ -7,7 +7,18 @@ function Home() {
     <div className="home-container">
       <div className="linear-gradient-background">
         <div className="home-title-container">
-          <h1 className="home-title">JASON CHOU</h1>
+          <div className="home-title">
+            <div className="letter">J</div>
+            <div className="letter">A</div>
+            <div className="letter">S</div>
+            <div className="letter">O</div>
+            <div className="letter">N</div>
+
+            <div className="letter">C</div>
+            <div className="letter">H</div>
+            <div className="letter">O</div>
+            <div className="letter">U</div>
+          </div>
           <p className="home-description-text">
             Showcase of all my projects over the TIJ1O0-G tech class
           </p>
