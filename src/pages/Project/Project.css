@@ -5,13 +5,19 @@
 .header-container {
   justify-self: center;
   text-align: center;
-  font-size: 70px;
+  font-size: 3rem;
   font-weight: bold;
   letter-spacing: 2.5vw;
   font-family: "M PLUS 1 Code", monospace;
   color: #ffffff;
   margin: 16px;
   padding-top: 32px;
+}
+.sub-header-container {
+  font-size: 1.5rem;
+  letter-spacing: 0.5vw;
+  font-family: "M PLUS 1 Code", monospace;
+  color: #ffffff7c;
 }
 
 .description {

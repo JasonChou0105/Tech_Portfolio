@@ -58,6 +58,8 @@
 }
 
 .letter {
+  transform: translateY(-60px);
+  opacity: 0;
   animation: letterAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -106,6 +108,8 @@
   animation: descriptionTextAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  transform: translateY(-60px);
+  opacity: 0;
 }
 
 @keyframes descriptionTextAnimation {

@@ -2,10 +2,11 @@ import "./Project.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
-function Project({ title, images, description }) {
+function Project({ title, subheader, images, description }) {
   return (
     <div className="project-container">
       <div className="header-container">{title}</div>
+      <div className="sub-header-container">{subheader}</div>
       <div className="content-container">
         <div className="inner-container image-container">
           <Splide

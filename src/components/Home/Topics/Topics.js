@@ -1,4 +1,3 @@
-import React from "react";
 import TopicTile from "./TopicTile/TopicTile";
 import "./Topics.css";
 

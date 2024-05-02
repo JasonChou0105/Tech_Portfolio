@@ -19,6 +19,7 @@ function App() {
               exact
               Component={Project.bind(this, {
                 title: "Dream Space",
+                subheader: "Designing and Building a Space",
                 images: [
                   "/images/dream-space/House.jpeg",
                   "/images/dream-space/House2.jpeg",
