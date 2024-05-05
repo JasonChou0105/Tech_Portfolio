@@ -56,7 +56,11 @@
 .layered-waves {
   background-image: url("../../../public/layered-waves-haikei.svg");
 }
-
+.fa-caret-down {
+  font-size: 3rem;
+  opacity: 0.5;
+  transform: translateY(40px);
+}
 .letter {
   transform: translateY(-60px);
   opacity: 0;

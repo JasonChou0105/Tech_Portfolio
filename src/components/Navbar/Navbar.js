@@ -25,7 +25,7 @@ function Navbar() {
     }
   }
   const handleScroll = () => {
-    const targetScrollY = 32; // Change this to your specific scroll point
+    const targetScrollY = 24; // Change this to your specific scroll point
     if (window.scrollY > targetScrollY) {
       setNavbarScrolled(true);
     } else {

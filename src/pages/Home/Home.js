@@ -25,7 +25,9 @@ function Home() {
         </div>
       </div>
       <div className="content-container-home">
-        <div className="spacer layered-waves"></div>
+        <div className="spacer layered-waves">
+          <i class="fas fa-caret-down"></i>
+        </div>
         <Topics />
         <Timeline />
       </div>
