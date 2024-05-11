@@ -5,7 +5,6 @@ import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Project from "./pages/Project/Project";
 import PageContainer from "./components/PageContainer/PageContainer";
-import Topic from "./pages/Topic/Topic";
 
 function App() {
   return (
@@ -34,16 +33,6 @@ function App() {
               path="/project/microbit"
               exact
               Component={Project.bind(this, {
-                title: "Microbit",
-                image: "/images/microbit/Microbit.png",
-                description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati ut, tempore consectetur non distinctio quasi error vitae officiis voluptatum dolor debitis ipsa accusantium vel tempora enim iste! Exercitationem, corrupti!",
-              })}
-            />
-            <Route
-              path="/topic/engineering"
-              exact
-              Component={Topic.bind(this, {
                 title: "Microbit",
                 image: "/images/microbit/Microbit.png",
                 description:
