@@ -3,6 +3,10 @@
 }
 
 .header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   justify-self: center;
   text-align: center;
   font-size: 3rem;
@@ -66,6 +70,10 @@
 }
 .splide__arrow--prev {
   transform: translateX(2vw) !important;
+}
+.letter:nth-child(5) {
+  animation-delay: 0.4s;
+  margin-right: 100px;
 }
 
 @media screen and (max-width: 850px) {

@@ -19,7 +19,7 @@ function Home() {
             <div className="letter">O</div>
             <div className="letter">U</div>
           </div>
-          <p className="home-description-text">
+          <p className="home-description-text description-text-transition">
             Showcase of all my projects over the TIJ1O0-G tech class
           </p>
         </div>

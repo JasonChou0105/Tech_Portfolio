@@ -17,13 +17,15 @@ function Timeline() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: "#004781",
+            background:
+              "radial-gradient(circle, rgba(0,69,152,1) 0%, rgba(0,56,117,1) 50%, rgba(1, 50, 129, 1) 100%)",
             color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "7px solid  #004781" }}
           date="2011 - present"
           iconStyle={{
-            background: "#004781",
+            background:
+              "radial-gradient(circle, rgba(0,69,152,1) 0%, rgba(0,56,117,1) 50%, rgba(0,39,103,1) 100%)",
             color: "#fff",
           }}
           icon={<WorkIcon />}
@@ -46,10 +48,18 @@ function Timeline() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#6e0d00", color: "#fff" }}
+          contentStyle={{
+            background:
+              "radial-gradient(circle, rgba(152,0,0,1) 0%, rgba(117,0,0,1) 48%, rgba(101, 0, 0, 1) 100%)",
+            color: "#fff",
+          }}
           contentArrowStyle={{ borderRight: "7px solid  #6e0d00" }}
           date="2011 - present"
-          iconStyle={{ background: "#6e0d00", color: "#fff" }}
+          iconStyle={{
+            background:
+              "radial-gradient(circle, rgba(152,0,0,1) 0%, rgba(117,0,0,1) 48%, rgba(78, 0, 0, 1) 100%)",
+            color: "#fff",
+          }}
           icon={<WorkIcon />}
         >
           <Link to="/project/microbit" className="link">

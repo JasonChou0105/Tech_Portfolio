@@ -1,12 +1,17 @@
 import "./Project.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import "../../App.css";
 
 function Project({ title, subheader, images, description }) {
   return (
     <div className="project-container">
-      <div className="header-container">{title}</div>
-      <div className="sub-header-container">{subheader}</div>
+      <div className="header-container">
+        {title.split("").map((c) => displayLetter(c))}
+      </div>
+      <div className="sub-header-container description-text-transition">
+        {subheader}
+      </div>
       <div className="content-container">
         <div className="inner-container image-container">
           <Splide
@@ -31,6 +36,10 @@ function Project({ title, subheader, images, description }) {
       </div>
     </div>
   );
+}
+
+function displayLetter(c) {
+  return <div className="letter">{c}</div>;
 }
 
 export default Project;

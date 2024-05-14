@@ -5,12 +5,14 @@ import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Project from "./pages/Project/Project";
 import PageContainer from "./components/PageContainer/PageContainer";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
+        <ScrollToTop />
         <PageContainer>
           <Routes>
             <Route path="/" exact Component={Home} />

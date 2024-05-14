@@ -4,8 +4,12 @@ import "./Topics.css";
 function Topics() {
   return (
     <div className="root-container">
-      <div className="topics-header">Topics Explored Thoughout This Course</div>
-      <div className="topics-sub-header">All The Concepts I Learned</div>
+      <div className="topics-header description-text-transition">
+        Topics Explored Thoughout This Course
+      </div>
+      <div className="topics-sub-header description-text-transition">
+        All The Concepts I Learned
+      </div>
       <div className="topics-container">
         <div className="topics-subcontainer">
           <TopicTile image="Engineering.png">Engineering</TopicTile>
