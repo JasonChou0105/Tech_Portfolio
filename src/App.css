@@ -14,6 +14,9 @@ body,
 #root {
   position: relative;
 }
+.letter {
+  letter-spacing: 1vw;
+}
 .letter:nth-child(1) {
   animation-delay: 0s;
 }
@@ -73,5 +76,19 @@ body,
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .letter {
+    font-size: 4rem !important;
+    letter-spacing: normal;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .letter {
+    font-size: 3rem !important;
+    letter-spacing: normal;
   }
 }

@@ -46,7 +46,6 @@
 }
 
 .spacer {
-  aspect-ratio: 900/200;
   width: 100%;
   height: min-content;
   background-repeat: no-repeat;
@@ -54,7 +53,8 @@
   background-size: cover;
 }
 .layered-waves {
-  background-image: url("../../../public/layered-waves-haikei.svg");
+  aspect-ratio: 900/200;
+  background-image: url("../../../public/svgs/layered-waves-haikei.svg");
 }
 .fa-caret-down {
   font-size: 3rem;
@@ -70,5 +70,5 @@
 }
 .letter:nth-child(5) {
   animation-delay: 0.4s;
-  margin-right: 100px;
+  margin-right: 10vw;
 }

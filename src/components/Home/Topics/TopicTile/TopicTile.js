@@ -1,21 +1,9 @@
-import React, { useRef, useState } from "react";
+import ShowWhenInViewport from "../../../ShowWhenInViewport";
 import "./TopicTile.css";
-import { useInViewport } from "react-in-viewport";
 
-function TopicTile({ children, image, to }) {
-  const myRef = useRef();
-  const [visable, setVisable] = useState(false);
-  const { inViewport } = useInViewport(myRef);
-
-  if (inViewport && !visable) {
-    setVisable(true);
-  }
-
+function TopicTile({ children, image }) {
   return (
-    <section
-      ref={myRef}
-      className={`topic-tile-container ${visable && "visable"}`}
-    >
+    <ShowWhenInViewport className="topic-tile-container">
       <div className="topic-image-container">
         <div
           className="topic-image"
@@ -31,7 +19,7 @@ function TopicTile({ children, image, to }) {
         </div>
       </div>
       <div className="topic-description-container">{children}</div>
-    </section>
+    </ShowWhenInViewport>
   );
 }
 

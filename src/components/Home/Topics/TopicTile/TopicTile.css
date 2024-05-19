@@ -3,13 +3,7 @@
   flex-direction: column;
   width: 100%;
   padding: 16px;
-  transform: translateY(30px);
-  opacity: 0%;
   transition: all 0.3s ease-in-out;
-}
-.topic-tile-container.visable {
-  transform: translateY(0);
-  opacity: 100%;
 }
 .topic-image-container {
   display: flex;
