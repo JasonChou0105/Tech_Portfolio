@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Project from "./pages/Project/Project";
 import PageContainer from "./components/PageContainer/PageContainer";
 import ScrollToTop from "./ScrollToTop";
+import DreamSpaceHeader from "./components/PageHeaders/DreamSpaceHeader/DreamSpaceHeader";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
               path="/project/dream-space"
               exact
               Component={Project.bind(this, {
-                title: "Dream Space",
+                title: <DreamSpaceHeader />,
                 subheader: "Designing and Building a Space",
                 images: [
                   "/images/dream-space/House.jpeg",

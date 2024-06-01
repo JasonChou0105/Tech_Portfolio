@@ -12,16 +12,6 @@
   flex-direction: column;
 }
 
-.home-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 16px;
-  padding-top: 100px;
-}
-
 .letter {
   color: #ffffff;
   margin: 0px 16px;
@@ -35,7 +25,8 @@
 .home-title-container {
   justify-content: center;
   align-items: center;
-  padding: 10px 16px 32px 16px;
+  padding: 100px 16px 32px 16px;
+  margin: 16px;
 }
 
 .home-description-text {
@@ -43,6 +34,7 @@
   align-self: center;
   text-align: center;
   margin-top: 32px;
+  text-align: center;
 }
 
 .spacer {
@@ -67,8 +59,4 @@
   animation: letterAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-}
-.letter:nth-child(5) {
-  animation-delay: 0.4s;
-  margin-right: 10vw;
 }
