@@ -7,6 +7,8 @@ import Project from "./pages/Project/Project";
 import PageContainer from "./components/PageContainer/PageContainer";
 import ScrollToTop from "./ScrollToTop";
 import DreamSpaceHeader from "./components/PageHeaders/DreamSpaceHeader/DreamSpaceHeader";
+import MicrobitHeader from "./components/PageHeaders/MicrobitHeader/MicrobitHeader";
+import CircuitHeader from "./components/PageHeaders/CircuitHeader/CircuitHeader";
 
 function App() {
   return (
@@ -36,8 +38,26 @@ function App() {
               path="/project/microbit"
               exact
               Component={Project.bind(this, {
-                title: "Microbit",
-                image: "/images/microbit/Microbit.png",
+                title: <MicrobitHeader />,
+                images: [
+                  "/images/dream-space/House.jpeg",
+                  "/images/dream-space/House2.jpeg",
+                  "/images/microbit/Microbit.png",
+                ],
+                description:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati ut, tempore consectetur non distinctio quasi error vitae officiis voluptatum dolor debitis ipsa accusantium vel tempora enim iste! Exercitationem, corrupti!",
+              })}
+            />
+            <Route
+              path="/project/circuit"
+              exact
+              Component={Project.bind(this, {
+                title: <CircuitHeader />,
+                images: [
+                  "/images/dream-space/House.jpeg",
+                  "/images/dream-space/House2.jpeg",
+                  "/images/microbit/Microbit.png",
+                ],
                 description:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati ut, tempore consectetur non distinctio quasi error vitae officiis voluptatum dolor debitis ipsa accusantium vel tempora enim iste! Exercitationem, corrupti!",
               })}

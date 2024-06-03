@@ -25,7 +25,7 @@ function NavbarLinks({ closeMobileMenu }) {
       </Link>
       <Link
         className="navbar-section-link"
-        to="/circuit"
+        to="/project/circuit"
         onClick={closeMobileMenu}
       >
         <div className="navbar-section-link-container">Circuit</div>

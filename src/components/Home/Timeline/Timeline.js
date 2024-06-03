@@ -81,26 +81,32 @@ function Timeline() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: "#004781",
+            background:
+              "radial-gradient(circle, rgba(0,69,152,1) 0%, rgba(0,56,117,1) 50%, rgba(1, 50, 129, 1) 100%)",
             color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "7px solid  #004781" }}
           date="2011 - present"
           iconStyle={{
-            background: "#004781",
+            background:
+              "radial-gradient(circle, rgba(0,69,152,1) 0%, rgba(0,56,117,1) 50%, rgba(0,39,103,1) 100%)",
             color: "#fff",
           }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Dream Space Project
-          </h3>
-          <p className="subtext">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            veritatis, facilis iure magnam maxime sed id, culpa asperiores fuga
-            corrupti quisquam quidem ab qui. Est expedita non voluptate quam
-            unde?
-          </p>
+          <Link to="/project/circuit" className="link">
+            <h3 className="vertical-timeline-element-title">Circuit</h3>
+            <p className="subtext">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div className="img-container">
+              <img
+                className="image"
+                src="/images/dream-space/House.jpeg"
+                alt="Dream room project"
+              />
+            </div>
+          </Link>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

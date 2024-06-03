@@ -16,6 +16,7 @@ body,
 }
 .letter {
   letter-spacing: 1vw;
+  font-size: 4.5rem;
 }
 
 @keyframes letterAnimation {

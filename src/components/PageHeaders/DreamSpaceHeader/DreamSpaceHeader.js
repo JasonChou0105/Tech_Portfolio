@@ -1,5 +1,6 @@
 import React from "react";
 import "./DreamSpaceHeader.css";
+import "../PageHeader.css";
 
 function DreamSpaceHeader() {
   return (
