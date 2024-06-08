@@ -5,9 +5,6 @@ import { Link } from "react-router-dom";
 function NavbarLinks({ closeMobileMenu }) {
   return (
     <>
-      <Link className="navbar-section-link" to="/" onClick={closeMobileMenu}>
-        <div className="navbar-section-link-container">Home</div>
-      </Link>
       <Link
         className="navbar-section-link"
         to="/project/dream-space"
@@ -29,6 +26,13 @@ function NavbarLinks({ closeMobileMenu }) {
         onClick={closeMobileMenu}
       >
         <div className="navbar-section-link-container">Circuit</div>
+      </Link>
+      <Link
+        className="navbar-section-link"
+        to="/project/bottle-rocket"
+        onClick={closeMobileMenu}
+      >
+        <div className="navbar-section-link-container">Bottle Rocket</div>
       </Link>
     </>
   );

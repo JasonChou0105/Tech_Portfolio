@@ -13,6 +13,7 @@ function Timeline() {
   return (
     <div>
       <div className="timeline-header">Timeline of All my Projects</div>
+
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -34,9 +35,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">
               Dream Space Project
             </h3>
-            <p className="subtext">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+            <p className="subtext">Designing and building a dream space.</p>
             <div className="img-container">
               <img
                 className="image"
@@ -46,6 +45,7 @@ function Timeline() {
             </div>
           </Link>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
@@ -67,7 +67,7 @@ function Timeline() {
               Microbit Project
             </h3>
             <p className="subtext">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Making a game with pythons microbit framework.
             </p>
             <div className="img-container">
               <img
@@ -78,6 +78,7 @@ function Timeline() {
             </div>
           </Link>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{
@@ -97,32 +98,51 @@ function Timeline() {
           <Link to="/project/circuit" className="link">
             <h3 className="vertical-timeline-element-title">Circuit</h3>
             <p className="subtext">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Using electronics and circuitry to construct a flashing LED light
+              circuit
             </p>
             <div className="img-container">
               <img
                 className="image"
-                src="/images/dream-space/House.jpeg"
+                src="/images/circuit/circuit1.png"
                 alt="Dream room project"
               />
             </div>
           </Link>
         </VerticalTimelineElement>
+
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "#6e0d00", color: "#fff" }}
+          contentStyle={{
+            background:
+              "radial-gradient(circle, rgba(152,0,0,1) 0%, rgba(117,0,0,1) 48%, rgba(101, 0, 0, 1) 100%)",
+            color: "#fff",
+          }}
           contentArrowStyle={{ borderRight: "7px solid  #6e0d00" }}
           date="2011 - present"
-          iconStyle={{ background: "#6e0d00", color: "#fff" }}
+          iconStyle={{
+            background:
+              "radial-gradient(circle, rgba(152,0,0,1) 0%, rgba(117,0,0,1) 48%, rgba(78, 0, 0, 1) 100%)",
+            color: "#fff",
+          }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">Microbit Project</h3>
-          <p className="subtext">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            veritatis, facilis iure magnam maxime sed id, culpa asperiores fuga
-            corrupti quisquam quidem ab qui. Est expedita non voluptate quam
-            unde?
-          </p>
+          <Link to="/project/bottle-rocket" className="link">
+            <h3 className="vertical-timeline-element-title">
+              Pop Bottle Rocket
+            </h3>
+            <p className="subtext">
+              Applying principles of aerodynamics and propulsion to build a pop
+              bottle rocket
+            </p>
+            <div className="img-container">
+              <img
+                className="image"
+                src="/images/pop-bottle-rocket/roket.png"
+                alt="Dream room project"
+              />
+            </div>
+          </Link>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

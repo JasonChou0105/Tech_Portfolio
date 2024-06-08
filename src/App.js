@@ -9,6 +9,7 @@ import ScrollToTop from "./ScrollToTop";
 import DreamSpaceHeader from "./components/PageHeaders/DreamSpaceHeader/DreamSpaceHeader";
 import MicrobitHeader from "./components/PageHeaders/MicrobitHeader/MicrobitHeader";
 import CircuitHeader from "./components/PageHeaders/CircuitHeader/CircuitHeader";
+import BottleRocketHeader from "./components/PageHeaders/BottleRocketHeader/BottleRocketHeader";
 
 function App() {
   return (
@@ -53,6 +54,20 @@ function App() {
               exact
               Component={Project.bind(this, {
                 title: <CircuitHeader />,
+                images: [
+                  "/images/dream-space/House.jpeg",
+                  "/images/dream-space/House2.jpeg",
+                  "/images/microbit/Microbit.png",
+                ],
+                description:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati ut, tempore consectetur non distinctio quasi error vitae officiis voluptatum dolor debitis ipsa accusantium vel tempora enim iste! Exercitationem, corrupti!",
+              })}
+            />
+            <Route
+              path="/project/bottle-rocket"
+              exact
+              Component={Project.bind(this, {
+                title: <BottleRocketHeader />,
                 images: [
                   "/images/dream-space/House.jpeg",
                   "/images/dream-space/House2.jpeg",
