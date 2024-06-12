@@ -23,7 +23,7 @@ function Timeline() {
             color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "7px solid  #004781" }}
-          date="2011 - present"
+          date="Due on Mar 8, 2024"
           iconStyle={{
             background:
               "radial-gradient(circle, rgba(0,69,152,1) 0%, rgba(0,56,117,1) 50%, rgba(0,39,103,1) 100%)",
@@ -54,7 +54,7 @@ function Timeline() {
             color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "7px solid  #6e0d00" }}
-          date="2011 - present"
+          date="Due on Mar 29, 2024"
           iconStyle={{
             background:
               "radial-gradient(circle, rgba(152,0,0,1) 0%, rgba(117,0,0,1) 48%, rgba(78, 0, 0, 1) 100%)",
@@ -87,7 +87,7 @@ function Timeline() {
             color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "7px solid  #004781" }}
-          date="2011 - present"
+          date="Due on Apr 12, 2024"
           iconStyle={{
             background:
               "radial-gradient(circle, rgba(0,69,152,1) 0%, rgba(0,56,117,1) 50%, rgba(0,39,103,1) 100%)",
@@ -119,7 +119,7 @@ function Timeline() {
             color: "#fff",
           }}
           contentArrowStyle={{ borderRight: "7px solid  #6e0d00" }}
-          date="2011 - present"
+          date="Due on Jun 6, 2024"
           iconStyle={{
             background:
               "radial-gradient(circle, rgba(152,0,0,1) 0%, rgba(117,0,0,1) 48%, rgba(78, 0, 0, 1) 100%)",
@@ -139,6 +139,35 @@ function Timeline() {
               <img
                 className="image"
                 src="/images/pop-bottle-rocket/roket.png"
+                alt="Dream room project"
+              />
+            </div>
+          </Link>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{
+            background:
+              "radial-gradient(circle, rgba(0,69,152,1) 0%, rgba(0,56,117,1) 50%, rgba(1, 50, 129, 1) 100%)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid  #004781" }}
+          date="Due on Jun 10, 2024"
+          iconStyle={{
+            background:
+              "radial-gradient(circle, rgba(0,69,152,1) 0%, rgba(0,56,117,1) 50%, rgba(0,39,103,1) 100%)",
+            color: "#fff",
+          }}
+          icon={<WorkIcon />}
+        >
+          <Link to="/project/circuit" className="link">
+            <h3 className="vertical-timeline-element-title">Banner</h3>
+            <p className="subtext">Designing a banner about me in photopea</p>
+            <div className="img-container">
+              <img
+                className="image"
+                src="/images/banner/Banner_timeline.png"
                 alt="Dream room project"
               />
             </div>

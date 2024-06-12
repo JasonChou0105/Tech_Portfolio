@@ -2,7 +2,10 @@
   color: #ffffff;
   font-size: 3rem;
   font-weight: bold;
-  margin: 16px 32px;
+  margin: 8px 8vw;
+  margin-top: 64px;
+  padding: 8px 16px;
+  border-bottom: #ffffff8a 4px solid;
 }
 .process-container {
   display: flex;

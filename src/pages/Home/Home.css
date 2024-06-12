@@ -20,7 +20,9 @@
   font-family: "M PLUS 1 Code", monospace;
 }
 .linear-gradient-background {
-  background: linear-gradient(#300f00, #600000);
+  background-image: url("/public/images/banner/Portfolio_Banner.png");
+  background-size: cover;
+  aspect-ratio: 1920/600;
 }
 .home-title-container {
   justify-content: center;
