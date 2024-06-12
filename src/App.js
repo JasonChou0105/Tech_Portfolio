@@ -35,6 +35,7 @@ function App() {
                   "In the dream space project we were assigned to make a detailed, hand-drawn floor plan of our dream space. We used TinkerCAD to create a 3D model of our floor plan, scaling further if necessary. We then built a physical model of our dream space using materials such as cardboard, foam core board, or any other appropriate materials, ensuring that the model accurately represents the design from the drawn floor plan and TinkerCAD.",
                 processDescriptions: [
                   "I started by making a floor plan for my dream space. This included elements like doors, toilets, sinks, walls, shelfs, tables, etc. This helped me understand the scaling of my dream space and how big everything should be",
+                  "I then designed the dream space in tinkercad which is a 3d modeling software. This helped me learn how to design 3d objects and helped me learn the mechanics of 3d modeling. I learned how to scale objects and fit them into a 3 dimensional space",
                 ],
               })}
             />

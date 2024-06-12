@@ -5,11 +5,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 20;
   background-color: #000413;
+  box-shadow: -1px -19px 26px 4px #600000;
 }
 .home-container {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .letter {
@@ -21,22 +24,37 @@
 }
 .linear-gradient-background {
   background-image: url("/public/images/banner/Portfolio_Banner.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  aspect-ratio: 1920/600;
+  background-position: center;
+  position: absolute;
+  inset: 0;
+  z-index: -100;
+  filter: blur(2px);
+}
+.banner-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 500px;
 }
 .home-title-container {
   justify-content: center;
   align-items: center;
-  padding: 100px 16px 32px 16px;
+  padding: 100px 7vw 32px 7vw;
   margin: 16px;
+  z-index: 10;
+  position: relative;
 }
 
 .home-description-text {
   color: #ffffff;
   align-self: center;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 64px;
   text-align: center;
+  z-index: 10;
 }
 
 .spacer {
