@@ -7,7 +7,7 @@
   flex-direction: column;
   z-index: 20;
   background-color: #000413;
-  box-shadow: -1px -19px 26px 4px #600000;
+  box-shadow: -1px -12px 30px 2px #00000044;
 }
 .home-container {
   display: flex;
@@ -30,7 +30,6 @@
   position: absolute;
   inset: 0;
   z-index: -100;
-  filter: blur(2px);
 }
 .banner-container {
   display: flex;
