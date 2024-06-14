@@ -161,7 +161,7 @@ function Timeline() {
           }}
           icon={<WorkIcon />}
         >
-          <Link to="/project/circuit" className="link">
+          <Link to="/project/banner" className="link">
             <h3 className="vertical-timeline-element-title">Banner</h3>
             <p className="subtext">Designing a banner about me in photopea</p>
             <div className="img-container">

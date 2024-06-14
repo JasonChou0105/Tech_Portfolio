@@ -19,6 +19,7 @@
   border-radius: 16px;
   background-color: #242424;
   transition: all 0.2s ease-in-out;
+  box-shadow: 0px 23px 22px -1px rgba(0, 0, 0, 0.42);
 }
 
 .desktop-container {
@@ -80,7 +81,7 @@
   width: 100%;
 }
 .navbar-container.active {
-  max-height: 330px;
+  max-height: 380px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
 }

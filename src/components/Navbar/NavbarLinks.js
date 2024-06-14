@@ -34,6 +34,13 @@ function NavbarLinks({ closeMobileMenu }) {
       >
         <div className="navbar-section-link-container">Bottle Rocket</div>
       </Link>
+      <Link
+        className="navbar-section-link"
+        to="/project/banner"
+        onClick={closeMobileMenu}
+      >
+        <div className="navbar-section-link-container">Banner</div>
+      </Link>
     </>
   );
 }

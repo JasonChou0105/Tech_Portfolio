@@ -10,6 +10,7 @@ import DreamSpaceHeader from "./components/PageHeaders/DreamSpaceHeader/DreamSpa
 import MicrobitHeader from "./components/PageHeaders/MicrobitHeader/MicrobitHeader";
 import CircuitHeader from "./components/PageHeaders/CircuitHeader/CircuitHeader";
 import BottleRocketHeader from "./components/PageHeaders/BottleRocketHeader/BottleRocketHeader";
+import BannerHeader from "./components/PageHeaders/BannerHeader/BannerHeader";
 
 function App() {
   return (
@@ -29,28 +30,67 @@ function App() {
                 images: [
                   "/images/dream-space/House.jpeg",
                   "/images/dream-space/House2.jpeg",
-                  "/images/microbit/Microbit.png",
+                  "/images/dream-space/image3.jpeg",
+                  "/images/dream-space/image4.jpeg",
+                  "/images/dream-space/image5.jpeg",
+                  "/images/dream-space/image6.jpeg",
                 ],
                 description:
                   "In the dream space project we were assigned to make a detailed, hand-drawn floor plan of our dream space. We used TinkerCAD to create a 3D model of our floor plan, scaling further if necessary. We then built a physical model of our dream space using materials such as cardboard, foam core board, or any other appropriate materials, ensuring that the model accurately represents the design from the drawn floor plan and TinkerCAD.",
-                processDescriptions: [
-                  "I started by making a floor plan for my dream space. This included elements like doors, toilets, sinks, walls, shelfs, tables, etc. This helped me understand the scaling of my dream space and how big everything should be",
-                  "I then designed the dream space in tinkercad which is a 3d modeling software. This helped me learn how to design 3d objects and helped me learn the mechanics of 3d modeling. I learned how to scale objects and fit them into a 3 dimensional space",
+                processInfo: [
+                  {
+                    description:
+                      "I started by making a floor plan for my dream space. This included elements like doors, toilets, sinks, walls, shelfs, tables, etc. This helped me understand the scaling of my dream space and how big everything should be",
+                    image: "/images/dream-space/floor_plan.jpeg",
+                    title: "Floor Plan",
+                    imageTitle: "My Floor Plan",
+                  },
+                  {
+                    description:
+                      "I then designed the dream space in tinkercad which is a 3d modeling software. This helped me learn how to design 3d objects and helped me learn the mechanics of 3d modeling. I learned how to scale objects and fit them into a 3 dimensional space",
+                    image: "/images/dream-space/tinkercad.png",
+                    title: "Tinkercad",
+                    imageTitle: "Model of my dream floor on Tinkercad",
+                  },
+                  {
+                    description:
+                      "I then designed the dream space in tinkercad which is a 3d modeling software. This helped me learn how to design 3d objects and helped me learn the mechanics of 3d modeling. I learned how to scale objects and fit them into a 3 dimensional space",
+                    image: "/images/dream-space/House.jpeg",
+                    title: "Build",
+                    imageTitle: "Physical model",
+                  },
                 ],
               })}
             />
+
             <Route
               path="/project/microbit"
               exact
               Component={Project.bind(this, {
                 title: <MicrobitHeader />,
                 images: [
-                  "/images/dream-space/House.jpeg",
-                  "/images/dream-space/House2.jpeg",
                   "/images/microbit/Microbit.png",
+                  "/images/microbit/Microbit2.png",
+                  "/images/microbit/Microbit3.png",
                 ],
                 description:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati ut, tempore consectetur non distinctio quasi error vitae officiis voluptatum dolor debitis ipsa accusantium vel tempora enim iste! Exercitationem, corrupti!",
+                processInfo: [
+                  {
+                    description:
+                      "I started by making a floor plan for my dream space. This included elements like doors, toilets, sinks, walls, shelfs, tables, etc. This helped me understand the scaling of my dream space and how big everything should be",
+                    image: "/images/microbit/Microbit.png",
+                    title: "Game design",
+                    imageTitle: "My game",
+                  },
+                  {
+                    description:
+                      "I then designed the dream space in tinkercad which is a 3d modeling software. This helped me learn how to design 3d objects and helped me learn the mechanics of 3d modeling. I learned how to scale objects and fit them into a 3 dimensional space",
+                    image: "/images/microbit/Microbit2.png",
+                    title: "Coding",
+                    imageTitle: "Some of the code",
+                  },
+                ],
               })}
             />
             <Route
@@ -65,6 +105,22 @@ function App() {
                 ],
                 description:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati ut, tempore consectetur non distinctio quasi error vitae officiis voluptatum dolor debitis ipsa accusantium vel tempora enim iste! Exercitationem, corrupti!",
+                processInfo: [
+                  {
+                    description:
+                      "I started by making a floor plan for my dream space. This included elements like doors, toilets, sinks, walls, shelfs, tables, etc. This helped me understand the scaling of my dream space and how big everything should be",
+                    image: "/images/dream-space/floor_plan.jpeg",
+                    title: "Floor Plan",
+                    imageTitle: "My Floor Plan",
+                  },
+                  {
+                    description:
+                      "I then designed the dream space in tinkercad which is a 3d modeling software. This helped me learn how to design 3d objects and helped me learn the mechanics of 3d modeling. I learned how to scale objects and fit them into a 3 dimensional space",
+                    image: "/images/dream-space/tinkercad.jpeg",
+                    title: "Tinkercad",
+                    imageTitle: "Model of my dream floor on Tinkercad",
+                  },
+                ],
               })}
             />
             <Route
@@ -79,6 +135,52 @@ function App() {
                 ],
                 description:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati ut, tempore consectetur non distinctio quasi error vitae officiis voluptatum dolor debitis ipsa accusantium vel tempora enim iste! Exercitationem, corrupti!",
+                processInfo: [
+                  {
+                    description:
+                      "I started by making a floor plan for my dream space. This included elements like doors, toilets, sinks, walls, shelfs, tables, etc. This helped me understand the scaling of my dream space and how big everything should be",
+                    image: "/images/dream-space/floor_plan.jpeg",
+                    title: "Floor Plan",
+                    imageTitle: "My Floor Plan",
+                  },
+                  {
+                    description:
+                      "I then designed the dream space in tinkercad which is a 3d modeling software. This helped me learn how to design 3d objects and helped me learn the mechanics of 3d modeling. I learned how to scale objects and fit them into a 3 dimensional space",
+                    image: "/images/dream-space/tinkercad.jpeg",
+                    title: "Tinkercad",
+                    imageTitle: "Model of my dream floor on Tinkercad",
+                  },
+                ],
+              })}
+            />
+            <Route
+              path="/project/banner"
+              exact
+              Component={Project.bind(this, {
+                title: <BannerHeader />,
+                images: [
+                  "/images/dream-space/House.jpeg",
+                  "/images/dream-space/House2.jpeg",
+                  "/images/microbit/Microbit.png",
+                ],
+                description:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati ut, tempore consectetur non distinctio quasi error vitae officiis voluptatum dolor debitis ipsa accusantium vel tempora enim iste! Exercitationem, corrupti!",
+                processInfo: [
+                  {
+                    description:
+                      "I started by making a floor plan for my dream space. This included elements like doors, toilets, sinks, walls, shelfs, tables, etc. This helped me understand the scaling of my dream space and how big everything should be",
+                    image: "/images/dream-space/floor_plan.jpeg",
+                    title: "Floor Plan",
+                    imageTitle: "My Floor Plan",
+                  },
+                  {
+                    description:
+                      "I then designed the dream space in tinkercad which is a 3d modeling software. This helped me learn how to design 3d objects and helped me learn the mechanics of 3d modeling. I learned how to scale objects and fit them into a 3 dimensional space",
+                    image: "/images/dream-space/tinkercad.jpeg",
+                    title: "Tinkercad",
+                    imageTitle: "Model of my dream floor on Tinkercad",
+                  },
+                ],
               })}
             />
           </Routes>

@@ -22,6 +22,9 @@
   width: 40%;
   transform: translate(-5vw, 0px);
 }
+.description {
+  font-size: 18px;
+}
 .image-container {
   width: 60%;
   display: flex;
@@ -37,6 +40,7 @@
   object-fit: cover;
   width: 70%;
   float: left;
+  max-height: 500px;
 }
 
 .splide__arrow--next {

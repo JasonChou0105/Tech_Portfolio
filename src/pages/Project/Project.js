@@ -3,13 +3,8 @@ import "../../App.css";
 import Overview from "../../components/Project/Overview/Overview";
 import Process from "../../components/Project/Process/Process";
 
-function Project({
-  title,
-  subheader,
-  images,
-  description,
-  processDescriptions,
-}) {
+function Project({ title, subheader, images, description, processInfo }) {
+  console.log(processInfo);
   return (
     <div className="project-container">
       <Overview
@@ -18,7 +13,7 @@ function Project({
         images={images}
         description={description}
       />
-      <Process processDescriptions={processDescriptions} />
+      <Process processInfo={processInfo} />
     </div>
   );
 }
