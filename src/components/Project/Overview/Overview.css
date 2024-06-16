@@ -39,8 +39,8 @@
 .slide-image {
   object-fit: cover;
   width: 70%;
-  float: left;
   max-height: 500px;
+  border-radius: 8px;
 }
 
 .splide__arrow--next {
