@@ -132,7 +132,7 @@ function App() {
                       "The next step was to attach all the given components. This would complete the circuit as well as give it functionality. The resistors were used to limit the flow of electricity to prevent the LED bulb from burning out. The capacitors store energy until enough is able to power the bulb. The electricity is then able to pass because of the transistors.",
                     image: "/images/circuit/circuit8.png",
                     title: "Components",
-                    imageTitle: "Adding all the components",
+                    imageTitle: "All the components",
                   },
                   {
                     description:
@@ -190,7 +190,7 @@ function App() {
                       "The final step was attaching the fins and the nose cone. I made the elliptical nose cone by stacking strips of chipboard on top of eachother and bending it to look like a nose cone. The fins were made with foam board and wrapped in vinyl to make it more visually pleasing, and make sure the aerodynamics of each fin were similar. I attached these components and the rocket was finished.",
                     image: "/images/pop-bottle-rocket/roket8.jpg",
                     title: "Attachments",
-                    imageTitle: "My Elliptical Nose Cone",
+                    imageTitle: "My Nose Cone and Fins",
                   },
                 ],
                 video: "/images/pop-bottle-rocket/roket.MOV",
