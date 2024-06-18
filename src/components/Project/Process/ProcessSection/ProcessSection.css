@@ -39,6 +39,7 @@
   margin-bottom: 64px;
   max-height: 450px;
   min-height: 100px;
+  object-fit: contain;
 }
 
 .process-description-container {

@@ -3,7 +3,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import "./Overview.css";
 
-function Overview({ title, subheader, images, description }) {
+function Overview({ title, subheader, images, description, video }) {
   return (
     <div className="overview-container">
       <div className="header-container">{title}</div>
@@ -26,6 +26,13 @@ function Overview({ title, subheader, images, description }) {
                 <img className="slide-image" src={image} alt="" />
               </SplideSlide>
             ))}
+            {video && (
+              <SplideSlide>
+                <video controls height="500">
+                  <source src={video} type="video/webm" />
+                </video>
+              </SplideSlide>
+            )}
           </Splide>
         </div>
         <div className="inner-container description-container">
